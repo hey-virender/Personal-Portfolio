@@ -11,61 +11,87 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="header">
-        <div class="profile-pic"><img src="pic.jpg"></div>
+        <img src="pic.jpg">
         <h1>Virender Chauhan</h1>
+        <h1 class="mp">My portfolio</h1>
     </header>
     <div class="contact-info">
-        <div class="phone">Phone :- 8894420573</div>
-        <div class="email">Email :- bikuchauhan786@gmail.com</div>
-        <div class="address">Address :- Shimla Himachal Pradesh 171001</div>
-    </div>
-    <div class="about">
-        <b>About</b>
-        <p>Hello, I'm Virender Chauhan. I'm graduated from Govt Degree College Chaura Maidan(Kotshera) and
-            currently pursuing a PGDCA from NIELIT in Shimla, Himachal Pradesh.
-            My passion lies in technology, and I'm particularly enthusiastic about Python, VB.NET, ASP.NET HTML, CSS,
-            and
-            JavaScript. My goal is to become a web or software developer, and I'm well-versed in Python programming,
-            Visual
-            Basic, Asp.Net
-            front-end web development with HTML, CSS, and JavaScript and Tally ERP software.
-
-            I've recently completed a project that streamlined data processing for a local business, resulting in a 30%
-            increase in efficiency. I believe in the power of technology to solve real-world problems, and I'm committed
-            to
-            delivering solutions that make a difference.
-
-            I invite you to explore my portfolio and get in touch if you'd like to collaborate on exciting projects or
-            opportunities. Feel free to reach out at my email.
-
-            Thank you for visiting!</p>
-    </div>
-    <div class="educational-details">
-        <div class="skills">
-            <ul>
-                <li><b>Skills</b></li>
-                <li>Python</li>
-                <li>Visual Basic.Net</li>
-                <li>ASP.Net</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Tally ERP</li>
-                <li>Microsoft Office</li>
-            </ul>
+        <div class="phone cnt"><i class="fa-solid fa-mobile fa-lg" style="color: #000000;"></i> 8894420573</div>
+        <div class="email cnt"><i class="fa-solid fa-at fa-lg" style="color: #000000;"></i> bikuchauhan786@gmail.com
         </div>
-        <div class="education">
-            <h3>Graduated in BA(JMC) from Govt Degree College Chaura Maidan(Koteshera) in 2022 </h3>
-            <h3>Completed Office Automation course from NIELIT Shimla 2023</h3>
-            <h3>Diploma in Computer Application from Bhartiya Jan Shikshan Sansthan</h3>
+        <div class="address cnt"><i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i> Shimla Himachal
+            Pradesh 171001</div>
+    </div>
+    <div class="tags"><button onclick="showDiv(1)">Show Div 1</button>
+        <button onclick="showDiv(2)">Show Div 2</button>
+    </div>
+    <div class="main">
+
+        <div class="about content content" id="div1">
+            <div class="content-inner">
+                <b>About</b>
+                <p>Hello, I'm Virender Chauhan. I'm graduated from Govt Degree College Chaura Maidan(Kotshera) and
+                    currently pursuing a PGDCA from NIELIT in Shimla, Himachal Pradesh.
+                    My passion lies in technology, and I'm particularly enthusiastic about Python, VB.NET, ASP.NET HTML,
+                    CSS,
+                    and
+                    JavaScript. My goal is to become a web or software developer, and I'm well-versed in Python
+                    programming,
+                    Visual
+                    Basic, Asp.Net
+                    front-end web development with HTML, CSS, and JavaScript and Tally ERP software.
+
+                    I've recently completed a project that streamlined data processing for a local business, resulting
+                    in a
+                    30%
+                    increase in efficiency. I believe in the power of technology to solve real-world problems, and I'm
+                    committed
+                    to
+                    delivering solutions that make a difference.
+
+                    I invite you to explore my portfolio and get in touch if you'd like to collaborate on exciting
+                    projects
+                    or
+                    opportunities. Feel free to reach out at my email.
+
+                    Thank you for visiting!</p>
+            </div>
+
+        </div>
+        <div class="educational-details content" id="div2">
+            <div class="content-inner">
+                <div class="skills">
+                    <ul>
+                        <li><b>Skills</b></li>
+                        <li>Python</li>
+                        <li>Visual Basic.Net</li>
+                        <li>ASP.Net</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Tally ERP</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Graduated in BA(JMC) from Govt Degree College Chaura Maidan(Koteshera) in 2022 </h3>
+                    <h3>Completed Office Automation course from NIELIT Shimla 2023</h3>
+                    <h3>Diploma in Computer Application from Bhartiya Jan Shikshan Sansthan</h3>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

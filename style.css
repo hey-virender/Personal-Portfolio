@@ -11,44 +11,108 @@ body {
 }
 
 header {
-    height: 30%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 1%;
+
 }
 
-.profile-pic {
-    width: 50%;
-}
-
-.profile-pic img {
-    height: 20%;
-    width: 20%;
+header img {
+    height: 15%;
+    width: 15%;
     border: 2px solid white;
     border-radius: 50%;
     margin-right: 0;
     padding: 0;
+    margin-left: 2%;
 }
 
-.profile-pic h1 {
-    margin-left: 0;
+header h1 {
+    text-align: center;
+    width: 30%;
+    margin-left: 0%;
+    font-weight: 900;
+    font-size: xx-large;
+    
+}
+.mp{
+    margin-left: 29%;
+    margin-right: 1%;
+    padding: 0;
+    font-style: italic;
 }
 
 .contact-info {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size:x-large
+    font-weight: 700;
+    font-size: large
 }
 
-.about p{
+.cnt {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.tags button {
+    outline: none;
+    border: 1px solid red;
+    background: transparent;
+    border-radius: 12px;
+    height: 100%;
+    width: 30%;
+}
+.about b {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.about p {
     font-size: larger;
     font-weight: 600;
     text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
+}
+
+.educational-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 600%;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    display: none;
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.5s; /* Add transition to opacity property */
+}
+
+.content.visible {
+    opacity: 1;
+    visibility: visible; /* Make it visible when the "visible" class is applied */
+    display: block;
+    
 }
