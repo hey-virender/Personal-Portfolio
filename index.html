@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Porflio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@200&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Caveat:wght@700&family=Exo+2:wght@500&family=Kaushan+Script&family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -23,46 +21,24 @@
         <h1 class="mp">My portfolio</h1>
     </header>
     <div class="contact-info">
-        <div class="phone cnt"><i class="fa-solid fa-mobile fa-lg" style="color: #000000;"></i> 8894420573</div>
-        <div class="email cnt"><i class="fa-solid fa-at fa-lg" style="color: #000000;"></i> bikuchauhan786@gmail.com
+        <div class="cnt"><i class="fa-solid fa-mobile fa-lg" style="color:white;"></i> 8894420573</div>
+        <div class="cnt"><i class="fa-solid fa-at fa-lg" style="color:white;"></i> bikuchauhan786@gmail.com
         </div>
-        <div class="address cnt"><i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i> Shimla Himachal
-            Pradesh 171001</div>
+       <!-- <div class="cnt"><i class="fa-solid fa-location-dot fa-lg" style="color:white;"></i> Shimla Himachal
+            Pradesh 171001</div> -->
     </div>
-    <div class="tags"><label onclick="showDiv(1)">About</label>
-        <label onclick="showDiv(2)">Skills</label>
-        <label onclick="showDiv(3)">Education</label>
+    <div class="tags"><label onclick="showOrHideDiv(1);">About</label>
+        <label onclick="showOrHideDiv(2);">Skills</label>
+        <label onclick="showOrHideDiv(3);">Education</label>
     </div>
     <div class="main">
 
         <div class="about content content" id="div1">
             <div class="content-inner">
-                <b>About</b>
-                <p style="line-height: 2.5;">Hello, I'm Virender Chauhan. I'm graduated from Govt Degree College Chaura Maidan(Kotshera) and
-                    currently pursuing a PGDCA from NIELIT in Shimla, Himachal Pradesh.
-                    My passion lies in technology, and I'm particularly enthusiastic about Python, VB.NET, ASP.NET HTML,
-                    CSS,
-                    and
-                    JavaScript. My goal is to become a web or software developer, and I'm well-versed in Python
-                    programming,
-                    Visual
-                    Basic, Asp.Net
-                    front-end web development with HTML, CSS, and JavaScript and Tally ERP software.
-
-                    I've recently completed a project that streamlined data processing for a local business, resulting
-                    in a
-                    30%
-                    increase in efficiency. I believe in the power of technology to solve real-world problems, and I'm
-                    committed
-                    to
-                    delivering solutions that make a difference.
-
-                    I invite you to explore my portfolio and get in touch if you'd like to collaborate on exciting
-                    projects
-                    or
-                    opportunities. Feel free to reach out at my email.
-
-                    Thank you for visiting!</p>
+                <h1>About</h1>
+                <p style="line-height: 2.5;">Hello, I'm Virender Chauhan. I'm graduated from Rajiv Gandhi Degree College Shimla (Kotshera) and currently pursuing a PGDCA from NIELIT in Shimla, Himachal Pradesh. My passion lies in technology, and I'm particularly enthusiastic about Python, VB.NET, ASP.NET HTML, CSS, and JavaScript. My goal is to become a web or software developer, and I'm well-versed in Python programming, Visual Basic, Asp.Net, front-end web development with HTML, CSS, and JavaScript and Tally ERP software. I believe in the power of technology to solve real-world problems, and I'm
+                    committed to delivering solutions that make a difference. I invite you to explore my portfolio and get in touch if you'd like to collaborate on exciting
+                    projects or opportunities. Feel free to reach out at my email.Thank you for visiting!</p>
             </div>
 
         </div>
@@ -71,18 +47,17 @@
                 <h1>Skills</h1>
                 <div class="skills">
                     <ul>
-                        <li><img class="images" src="images/python.png" width="30%"> Python </li>
-                        <li><img class="images" src="images/vb.png" width="30%"> Visual Basic.Net </li>
-                        <li><img class="images" src="images/" width="30%"> ASP.Net </li>
-                        <li><img class="images" src="images/sql.png" width="30%"> SQL</li>
-                        <li><img class="images" src="images/html.png" width="30%"> HTML </li>
+                        <li><img class="images" src="images/python.png" width="105px"> Python </li>
+                        <li><img class="images" src="images/vb.png" width="105px"> VB and Asp.Net </li>
+                        <li><img class="images" src="images/sql.png" width="105px"> SQL</li>
+                        <li><img class="images" src="images/html.png" width="105px"> HTML </li>
 
                     </ul>
-                    <ul class="skill">
-                        <li><img class="images" src="images/css.png" width="30%"> CSS </li>
-                        <li><img class="images" src="images/js.png" width="30%"> JavaScript </li>
-                        <li><img class="images" src="images/tally.png" width="40%"> Tally ERP </li>
-                        <li><img class="images" src="images/office.png" width="40%"> Microsoft Office </li>
+                    <ul>
+                        <li><img class="images" src="images/css.png" width="105px"> CSS </li>
+                        <li><img class="images" src="images/js.png" width="105px"> JavaScript </li>
+                        <li><img class="images" src="images/tally.png" width="115px"> Tally ERP </li>
+                        <li><img class="images" src="images/office.png" width="115px"> Microsoft Office </li>
                     </ul>
                 </div>
 
@@ -100,6 +75,8 @@
             </div>
         </div>
     </div>
+    <div id="info" class="info" ><p>Click on any of above for more details</p></div>
+    
 
     <script src="script.js"></script>
 </body>

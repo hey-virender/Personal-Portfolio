@@ -22,7 +22,7 @@ header {
 
 header img {
     height: 15%;
-    width: 15%;
+    width: 12%;
     border: 2px solid white;
     border-radius: 50%;
     margin-right: 0;
@@ -37,6 +37,9 @@ header h1 {
     font-weight: 900;
     font-size: xx-large;
     color: white;
+    font-family: 'Kaushan Script', cursive;
+    /*font-family: 'Exo 2', sans-serif;*/
+    text-shadow : 8px 6px 5px  rgb(253, 2, 2);
     
 }
 .mp{
@@ -44,6 +47,7 @@ header h1 {
     margin-right: 1%;
     padding: 0;
     font-style: italic;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .contact-info {
@@ -61,12 +65,18 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-right: 0;
     color: white;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+
+}
+.cnt:hover{
+    text-shadow: 4px 2px 8px  rgb(0, 247, 255);
 }
 .cnt i{
-    margin-right: 3%;
+    margin-right: 7%;
 }
 .tags{
     display: flex;
@@ -82,8 +92,10 @@ header h1 {
     width: 30%;
     text-align: center;
     font-weight: 800;
-    font-size: x-large;
-    text-shadow: 1px 2px red;
+    font-size: 40px;
+    text-shadow: 6px 2px 4px  red;
+    color: white;
+    font-family: 'Caveat', cursive;
 }
 .about b {
     font-size: xx-large;
@@ -123,7 +135,10 @@ header h1 {
     display: none;
     visibility: hidden; /* Hidden by default */
     transition: opacity 0.5s; /* Add transition to opacity property */
-    color:white
+    color:white;
+    font-family: 'Sirin Stencil', sans-serif;
+
+
 
     
 }
@@ -135,48 +150,79 @@ header h1 {
     height: 600px;
     background: transparent;
     outline: none;
-    
+    align-items: center
 }
+
+.content-inner h1{
+    text-align: center;
+    font-family: 'Sirin Stencil', sans-serif;
+}
+
 .skills{
     display: flex;
-
-    justify-content: center;
-}
-.skills h1{
-    width: 100%;
-}
-.skills ul{
-    list-style: none;
-    padding: 0;
-}
- li{
     align-items: center;
-    align-content: center;
-   
-    font-size: x-large;
-    text-decoration: solid;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul{
+    width: 45%;
+    list-style: none;
+    padding: 12px;
+    display: flex;
+    flex-direction:column;
+    align-items: justify;
+    margin:15%;
+    margin-top: 3%;
     
 }
-.skills ul li {
+ 
+.skills li {
     width: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10px; /* Add padding to the list items for spacing */
+    display: flex;
+    flex-direction:row;
+    margin-top:16%;
+    align-items: center;
+    font-family: 'Sirin Stencil', sans-serif;
+    font-size: 40px;
+    transition: text-shadow 0.7s;
     
 }
+.images{
+    transition: scale 1s, transform 1s;
+    margin-left: 0;
+    margin-right: 3%;
+}
+.skills li:hover .images{
+    scale: 1.2;
+    transform:rotate(360deg);
 
 
-
-/* To make it responsive, adjust the width for smaller screens */
-@media (max-width: 768px) {
-    li {
-        width: 100%;
-    }
+}
+.skills li:hover{
+    text-shadow: 1px 2px  red;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .education h3{
     margin-top:2%;
     margin-bottom: 5%;
 }
+.info{
+    color: white;
+    font-size:50px;
+    text-align: center;
+    display: block;
+    margin-top: 10%;
+}
+.info.hidden{
+    display: none;
+}
+
 
 
 
