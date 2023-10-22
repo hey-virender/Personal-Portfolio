@@ -5,9 +5,12 @@
 }
 
 body {
-    background: linear-gradient(80deg,rgb(243, 67, 13), white);
-    background-repeat: no-repeat;
+    background:url("images/background.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur 10px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 header {
@@ -33,6 +36,7 @@ header h1 {
     margin-left: 0%;
     font-weight: 900;
     font-size: xx-large;
+    color: white;
     
 }
 .mp{
@@ -45,18 +49,24 @@ header h1 {
 .contact-info {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: large
+    font-size: large;
 }
 
 .cnt {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 0;
+    color: white;
+}
+.cnt i{
+    margin-right: 3%;
 }
 .tags{
     display: flex;
@@ -66,7 +76,6 @@ header h1 {
 }
 .tags label {
     outline: none;
-    border: 1px solid red;
     background: transparent;
     border-radius: 12px;
     height: 100%;
@@ -103,26 +112,73 @@ header h1 {
     display: flex;
     flex-direction: row;
     
+    
 }
 
 .content {
     margin-top: 2%;
     flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
     opacity: 0;
     display: none;
     visibility: hidden; /* Hidden by default */
     transition: opacity 0.5s; /* Add transition to opacity property */
+    color:white
+
+    
 }
 
 .content.visible {
     opacity: 1;
     visibility: visible; /* Make it visible when the "visible" class is applied */
     display: block;
-    height: 450px;
+    height: 600px;
     background: transparent;
-    border-radius: 15px;
-    border: 4px solid black;
+    outline: none;
     
 }
+.skills{
+    display: flex;
+
+    justify-content: center;
+}
+.skills h1{
+    width: 100%;
+}
+.skills ul{
+    list-style: none;
+    padding: 0;
+}
+ li{
+    align-items: center;
+    align-content: center;
+   
+    font-size: x-large;
+    text-decoration: solid;
+    
+}
+.skills ul li {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px; /* Add padding to the list items for spacing */
+    
+}
+
+
+
+/* To make it responsive, adjust the width for smaller screens */
+@media (max-width: 768px) {
+    li {
+        width: 100%;
+    }
+}
+.education h3{
+    margin-top:2%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
